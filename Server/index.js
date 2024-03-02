@@ -1,9 +1,9 @@
 const express = require("express");
-const router = express();
+const app = express();
 
-router.use(express.json());
+app.use(express.json());
 
 
-router.listen("5001", () => {
+app.listen(process.env.PORT, () => {
     console.log("Server is running")
 })
